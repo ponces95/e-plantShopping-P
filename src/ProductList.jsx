@@ -1,4 +1,7 @@
 import React, { useState,useEffect } from 'react';
+import {useDispatch , useSelector} from 'react-redux';
+import {addItem} from './CreateSlice';
+
 import './ProductList.css'
 import CartItem from './CartItem';
 function ProductList() {
