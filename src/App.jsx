@@ -46,7 +46,11 @@ const handleProducts = () =>  {
 
       </div>
       <div className={`product-list-container ${showProductList ? 'visible' : ''}`}>
-        <ProductList />
+        {showCart? (
+      <Cart onContinueShopping={handleProducts}/>
+      ):(
+        <ProductList onGotoCart = {handleCart} />
+      )}
       </div>
     </div>
   );
