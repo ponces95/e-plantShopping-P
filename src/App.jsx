@@ -5,7 +5,6 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import AboutUs from './AboutUs';
 import Cart from './CartItem';
-import ProductList from './Productlist';
 import store from './store';
 import { Provider } from 'react-redux';
 
